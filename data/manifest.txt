@@ -1,0 +1,8 @@
+Manifest file for knb-lter-ble.1.7-4c9184f37cff01bcdc32dc486ec36961.zip created on Fri Aug 07 15:27:23 MDT 2020
+regional_survey.csv (31626 bytes)
+Elson_2015_spatial_survey.csv (224030 bytes)
+IBP_C_diel_pCO2.csv (71190 bytes)
+IBP_C_Daily_NEP.csv (14092 bytes)
+knb-lter-ble.1.7.xml (81340 bytes)
+knb-lter-ble.1.7.txt (44574 bytes)
+knb-lter-ble.1.7.report.xml (96531 bytes)

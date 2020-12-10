@@ -1,0 +1,1570 @@
+
+  
+    
+      uid=BLE,o=LTER,dc=ecoinformatics,dc=org
+      all
+    
+    
+      public
+      read
+    
+  
+  
+    doi:10.6073/pasta/e6c261fbd143e720af5a46a9a131a616
+    Carbon flux from aquatic ecosystems of the Arctic Coastal Plain along the Beaufort Sea, Alaska, 2010-2018
+    
+      Beaufort Lagoon Ecosystems LTER
+      			750 Channel View Dr.
+			Port Aransas, TX 78373  USA
+      BLE-IM@utexas.edu
+      https://ble.lternet.edu/
+    
+    
+      Vanessa L Lougheed
+      The University of Texas at El Paso
+      			500 W University Ave Department of Biological Sciences
+			El Paso, TX 79902  USA
+      915-747-6887
+      vlougheed@utep.edu
+      https://expertise.utep.edu/node/26254
+
+      https://orcid.org/0000-0002-6091-1151
+    
+    
+      Beaufort Lagoon Ecosystems LTER
+      			750 Channel View Dr.
+			Port Aransas, TX 78373  USA
+      BLE-IM@utexas.edu
+      https://ble.lternet.edu/
+    
+    2019
+    English
+    Multiple aquatic ecosystems (pond, lake, river, lagoon, ocean) on the Arctic Coastal Plain (ACP) near Utqiaġvik, AK were visited to determine their relative contribution to landscape-level atmospheric CO2 flux and how this may have changed over time. pCO2 (partial pressure of carbon dioxide) was monitored in late summer (late July to mid-August) over a period of four years (2013, 2015, 2017, 2018) from open water areas and is related to habitat type, dissolved organic carbon (DOC) and environmental factors (temperature, radiation, rainfall). Data include both daily averages from most sites, as well as spatial representation of pCO2 in Elson Lagoon and diel cycles of pCO2 from a tundra pond. Pond NEP (net ecosystem production) is estimated by free water metabolism and presented as daily estimates over a four summer period.
+    
+      movement of inorganic matter
+      movement of organic matter
+      primary production
+      LTER Core Research Areas
+    
+    
+      aquatic ecosystems
+      biogeochemistry
+      carbon cycling
+      carbon flux
+      estuaries
+      lakes
+      oceans
+      ponds
+      streams
+      water column
+      LTER Controlled Vocabulary v1
+    
+    
+      Chukchi Sea
+      East Twin Lake
+      Elson Lagoon
+      Emaiksoun Lake
+      Footprint Lake
+      Ikroavik Lake
+      Mayoeak River
+      Geographic Names Information System
+    
+    
+      Beaufort Lagoon Ecosystems LTER
+      BLE
+      LTER
+      BLE LTER Controlled Vocabulary
+    
+    
+      
+  This data package is released to the “public domain” under Creative
+  Commons CC0 1.0 “No Rights Reserved”
+  (see: https://creativecommons.org/publicdomain/zero/1.0/). It is
+  considered professional etiquette to provide attribution of the
+  original work if this data package is shared or utilized in whole or
+  by individual components. A generic citation is provided for this data
+  package on the website of the repository where these data were
+  obtained in the summary metadata page.
+
+      
+  Communication (and collaboration) with the creators of this data
+  package is recommended to prevent duplicate research or publication.
+  The Data User is urged to contact the authors of these data if any
+  questions about methodology or results occur. The Data User should
+  realize that these data may be actively used by others for ongoing
+  research and that coordination may be necessary to prevent duplication
+  or inappropriate use. The Data User should realize that
+  misinterpretation may occur if data are used outside of the context of
+  the original study. The Data User should be aware that periodic
+  updates of this data package may be available from the website and it
+  is the responsibility of the Data User to check for new versions of
+  the data.
+
+      
+  While substantial efforts are made to ensure the accuracy of data and
+  associated documentation, complete accuracy cannot be guaranteed. This
+  data package (with its components) is made available “as is” and with
+  no warranty of accuracy or fitness for use. The creators of this data
+  package and the repository where these data were obtained shall not be
+  liable for any damages resulting from misinterpretation, use or misuse
+  of the data package or its components. Thank you.
+
+      This data package contains data sourced from the National Ecological Observatory Network (NEON) (solar radiation data, identified in attribute description and cited in method description). Use of this data should follow the NEON data policy, accessed 2020-04-06 and reproduced below.
+      
+Permission is hereby granted, free of charge, to any person or organization obtaining a copy of the NEON Project data, associated software and accompanying documentation covered by this license (the "NEON Data Products") to use, reproduce, display, distribute, publish, execute, and transmit the NEON Data Products, and to prepare derivative works of the NEON Data Products, and to permit third-parties to whom the NEON Data Products are furnished to do so, all subject to the following:
+      The copyright notices in the NEON Data Products and this entire statement, including the above copyright statement, license grant, this restriction and the following disclaimer, must be included in all copies of the NEON Data Products, in whole or in part, and all derivative works of the Data Products.
+      THE NEON DATA PRODUCTS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE NEON DATA PRODUCTS BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE NEON DATA PRODUCTS.
+    
+    
+      Creative Commons Zero v1.0 Universal
+      https://spdx.org/licenses/CC0-1.0.html
+      CC0-1.0
+    
+    
+      
+        Bounding box, knb-lter-ble.1: Located in North Slope, Alaska, USA, close to Utqiaġvik (formerly Barrow). Encompasses maximum extent of accompanying data, with 0.000001 degree buffer on each side. Note that many ponds and lakes in this area were sampled in Regional Survey, along with sites along the Chukchi coast. Coordinates based on WGS84 datum, as with others in dataset. 
+        
+          -157.305763
+          -155.926235
+          71.383133
+          71.025905
+        
+      
+      
+        Elson Lagoon: Located in North Slope, Alaska, USA, close to Utqiaġvik (formerly Barrow). Extent determined from satellite imagery at 1:250000 scale, with roughly a few hundred meters buffer on each side. Coordinates based on WGS84 datum.
+        
+          -156.603000
+          -155.914000
+          71.395000
+          71.158000
+        
+      
+      
+        Elson West Lagoon Deep Station 1: Located in North Slope, Alaska, USA, close to Utqiaġvik (formerly Barrow). Coordinates based on WGS84 datum.
+        
+          -156.416500
+          -156.416500
+          71.337900
+          71.337900
+        
+      
+      
+        Elson West Lagoon Shallow Station 1: Coordinates based on WGS84 datum.
+        
+          -156.564790
+          -156.564790
+          71.328940
+          71.328940
+        
+      
+      
+        IBP-C: Tundra pond, close to Utqiaġvik (formerly Barrow), North Slope, Alaska, USA. Coordinates based on WGS84 datum.
+        
+          -156.702102
+          -156.702102
+          71.294626
+          71.294626
+        
+      
+      
+        
+          
+            2010-06-12
+          
+          
+            2018-08-02
+          
+        
+      
+    
+    
+      http://purl.obolibrary.org/obo/IAO_0000136
+      http://purl.obolibrary.org/obo/ENVO_00000038
+    
+    
+      No regular updates scheduled.
+      notPlanned
+      
+        Metadata and data
+        No previous revision
+        2019-04-29
+        An Nguyen : First upload.
+      
+      
+        Metadata
+        See previous revision 1
+        2019-05-09
+        An Nguyen : Second upload: add Andy Mahoney's ORCID and change BLE-LTER from organization creator to personal.
+      
+      
+        Metadata
+        See previous revision 2
+        2019-05-15
+        An Nguyen : Edit metadata to comply with Arctic Data Center's requirements.
+      
+      
+        Metadata
+        See previous revision 3
+        2019-05-15
+        An Nguyen : Edit metadata to comply with Arctic Data Center's requirements.
+      
+      
+        Metadata
+        See previous revision 4
+        2019-05-15
+        An Nguyen : Minor edit to metadata to comply with Arctic Data Center's requirements.
+      
+      
+        Metadata
+        See previous revision 5
+        2020-02-11
+        An Nguyen : Change BLE creator to org instead of individual. Add semantic annotations.
+      
+      
+        Metadata and data
+        See previous revision 6
+        2020-04-06
+        An Nguyen : Append units to column names (new BLE practice), reproduce NEON data policy within intellectualRights
+      
+    
+    
+      Beaufort Lagoon Ecosystems LTER
+      Information Manager
+      			MC R8000 The University of Texas at Austin
+			Austin, TX 78712  USA
+      BLE-IM@utexas.edu
+      https://ble.lternet.edu/
+    
+    
+      Beaufort Lagoon Ecosystems LTER
+      			750 Channel View Dr.
+			Port Aransas, TX 78373  USA
+      BLE-IM@utexas.edu
+      https://ble.lternet.edu/
+    
+    
+      
+        
+          
+  pCO2 (partial pressure of carbon dioxide) was monitored in late summer
+  (late July to mid-August) over a period of 4 years (2013, 2015, 2017,
+  2018) from open water areas of a variety of aquatic habitats. pCO2 was
+  monitored for a minimum of 30 minutes, to allow measurements to
+  stabilize, up to a maximum of nearly 3 weeks of diel monitoring,
+  depending on the site. At sites monitored on a diel basis, aquatic CO2
+  was logged every minute using an NDIR CO2 sensor (Vaisala GMM 222)
+  enclosed in a PFTE membrane (sensu (Hari et al. 2008, Johnson et al.
+  2010, Bass et al. 2012) linked to a Campbell Scientific CR1000
+  datalogger. At sites where continuous stations were not installed, a
+  portable NDIR CO2 sensor (Vaisala GMT220) was allowed to stabilize for
+  at least 30 minutes before a value was recorded. Data were converted
+  to pCO2 using water temperature and pressure logged with a HOBO U20
+  logger. CO2 flux (g C/m2/day) was calculated following corrections for
+  diffusive exchange with the atmosphere estimated using wind-derived
+  gas transfer co-efficients (k) (Wanninkhof 2014).
+
+          
+  DOC was measured on either a Lachat IL-550 or a Shimadzu TOC-V
+  analyzer. DOC was measured as non-purgeable organic carbon (NPOC) on
+  the Shimadzu instrument; data from the Lachat were converted to NPOC
+  based on samples run on both machines (n=86; range 1.9 to 68 mg/L
+  NPOC; r2=0.98).
+
+          
+  Downward total solar irradiance data were retrieved from Barrow
+  Atmospheric Baseline Observatory (NOAA ESRL) prior to 2017. Post-2017,
+  these data were acquired from NEON's Barrow Environmental Observatory
+  Site (National Ecological Observatory Network 2018). A comparison
+  between the 2 sites in 2017 was used to standardize the data among
+  years (r2=0.97). Photosynthetically active radiation (PAR), air
+  temperature and rain data were collected from a HOBO weather station
+  installed near IBP Pond C until 2013. Starting in 2015, rain data were
+  retrieved from the National Weather Service, Barrow Airport; air
+  temperatures and atmospheric CO2 were from NOAA ESRL. For
+  identification of unusual temperature and radiation conditions, we
+  calculated the 95th percentile of each of these based on all data from
+  July and August in the 4 study years (2013, 2015, 2017, 2018); as
+  such, this is not meant to be representative of a long-term analysis,
+  but rather represents the study period in general.
+
+          
+  A YSI 6920 V2 multiparameter water quality sonde was deployed into
+  IBP-C throughout the summers (early June- late August) of 2010-2013,
+  and also for 3 weeks in late summer 2015, to record temperature and
+  dissolved oxygen (DO) every 15 minutes. Data from the optical DO
+  sensor was used to continually estimate NEP at IBP-C using a
+  free-water metabolism (FWM) technique (Cole et al. 2000, Pace and
+  Prairie 2004, Staehr et al. 2010), where hourly NEP is expressed as a
+  function of the change in O2 minus diffusion. Diffusion and other
+  parameters were calculated using formulae and steps described in
+  detail elsewhere (Staehr et al. 2010). Even though there is no period
+  of darkness in June-July in Utqiaġvik, we assumed that PAR at 2am was
+  sufficiently low (Median = 35) to allow for estimation of respiration
+  (R), prior to the sun setting in early August; however, it is worth
+  noting that this assumption may be less robust at the beginning of the
+  summer when the sun does not set. Sensor-based DO was validated
+  against lab analyses using the Winkler method (Wetzel and Likens
+  2000).
+
+          
+  Bass, A. M., M. I. Bird, M. J. Morrison, and J. Gordon. 2012. CADICA:
+  Continuous Automated Dissolved Inorganic Carbon Analyzer with
+  application to aquatic carbon cycle science. Limnology and
+  Oceanography-Methods 10:10–19.
+
+          
+  Cole, J. J., M. L. Pace, S. R. Carpenter, and J. F. Kitchell. 2000.
+  Persistence of net heterotrophy in lakes during nutrient addition and
+  food web manipulations. Limnology and Oceanography 45:1718–1730.
+
+          
+  Hari, P., J. Pumpanen, J. Huotari, P. Kolari, J. Grace, T. Vesala, and
+  A. Ojala. 2008. High-frequency measurements of productivity of
+  planktonic algae using rugged nondispersive infrared carbon dioxide
+  probes. Limnology and Oceanography-Methods 6:347–354.
+
+          
+  Johnson, M. S., M. F. Billett, K. J. Dinsmore, M. Wallin, K. E. Dyson,
+  and R. S. Jassal. 2010. Direct and continuous measurement of dissolved
+  carbon dioxide in freshwater aquatic systems-method and applications.
+  Ecohydrology 3:68–78.
+
+          
+  National Ecological Observatory Network. 2020. Data Product DP1.00014.001, Shortwave radiation (direct and diffuse pyranometer). Provisional data downloaded from http://data.neonscience.org on April 6, 2020. Battelle, Boulder, CO, USA NEON. 2020.
+          
+  Pace, M. L., and Y. T. Prairie. 2004. Respiration in lakes. Pages
+  103–121 in P. J. le. B. Williams and P. A. del Giorgio, editors.
+  Respiration in Aquatic Ecosystems. Oxford University Press.
+
+          
+  Staehr, P. A., D. Bade, M. C. Van de Bogert, G. R. Koch, C.
+  Williamson, P. Hanson, J. J. Cole, and T. Kratz. 2010. Lake metabolism
+  and the diel oxygen technique: State of the science. Limnology and
+  Oceanography-Methods 8:628–644.
+
+          
+  Wanninkhof, R. 2014. Relationship between wind speed and gas exchange
+  over the ocean revisited. Limnology and Oceanography: Methods
+  12:351–362.
+
+          
+  Wetzel, R. G., and G. E. Likens. 2000. Limnological Analysis.
+  Springer-Verlag, New York.
+
+        
+      
+    
+    
+      LTER: Beaufort Sea Lagoons: An Arctic Coastal Ecosystem in Transition
+      
+        Kenneth Dunton
+        The University of Texas at Austin, Marine Science Insitute
+        361-749-6744
+        ken.dunton@utexas.edu
+        https://orcid.org/0000-0003-3498-8021
+        Lead Principal Investigator
+      
+      
+        James McClelland
+        The University of Texas at Austin, Marine Science Insitute
+        361-749-6756
+        jimm@utexas.edu
+        https://orcid.org/0000-0001-9619-8194
+        Co-Lead Principal Investigator
+      
+      
+        Byron Crump
+        Oregon State University
+        bcrump@coas.oregonstate.edu
+        https://orcid.org/0000-0001-7062-1273
+        Co-Principal Investigator
+      
+      
+        Amber Hardison
+        Virginia Institute of Marine Science, College of William & Mary
+        akhardison@vims.edu
+        https://orcid.org/0000-0002-0891-3731
+        Co-Principal Investigator
+      
+      
+        Katrin Iken
+        University of Alaska Fairbanks
+        kbiken@alaska.edu
+        https://orcid.org/0000-0001-7961-1012
+        Co-Principal Investigator
+      
+      
+        Jeremy Kasper
+        University of Alaska Fairbanks
+        jlkasper@alaska.edu
+        https://orcid.org/0000-0003-0975-6114
+        Co-Principal Investigator
+      
+      
+        Vanessa Lougheed
+        The University of Texas at El Paso
+        vlougheed@utep.edu
+        https://orcid.org/0000-0002-6091-1151
+        Co-Principal Investigator
+      
+      
+        Andrew Mahoney
+        University of Alaska Fairbanks
+        armahoney@alaska.edu
+        https://orcid.org/0000-0002-8699-3175
+        Co-Principal Investigator
+      
+      
+        Bailey McMeans
+        University of Toronto Missisauga
+        bailey.mcmeans@utoronto.ca
+        https://orcid.org/0000-0002-9793-6811
+        Co-Principal Investigator
+      
+      
+        Michael Rawlins
+        University of Massachusetts Amherst
+        rawlins@geo.umass.edu
+        https://orcid.org/0000-0002-3323-8256
+        Co-Principal Investigator
+      
+      
+        Yvette Spitz
+        Oregon State University
+        yspitz@coas.oregonstate.edu
+        https://orcid.org/0000-0002-6026-4900
+        Co-Principal Investigator
+      
+      
+        Craig Tweedie
+        The University of Texas at El Paso
+        ctweedie@utep.edu
+        https://orcid.org/0000-0002-3409-8881
+        Co-Principal Investigator
+      
+      
+        Christina Bonsell
+        The University of Texas at Austin
+        cbonsell@utexas.edu
+        https://orcid.org/0000-0002-8564-0618
+        Project Manager
+      
+      
+        Nathan McTigue
+        The University of Texas at Austin
+        mctigue@utexas.edu
+        https://orcid.org/0000-0002-7686-7095
+        Project Manager
+      
+      
+        Timothy Whiteaker
+        The University of Texas at Austin
+        whiteaker@utexas.edu
+        https://orcid.org/0000-0002-1940-4158
+        Information Manager
+      
+      
+        An T. Nguyen
+        The University of Texas at Austin
+        enthusiast@utexas.edu
+        https://orcid.org/0000-0001-6519-0173
+        Information Manager
+      
+      
+        
+          
+This project established a new Long Term Ecological Research (LTER) site along the Alaskan Arctic coastline. Research based out of Utqiagvik (formerly Barrow), Deadhorse, and Kaktovik will address how changes in shoreline erosion and freshwater inflows to the coastal ocean over seasonal, annual, and longer timeframes influence near-shore food webs. Research will be conducted in collaboration with local stakeholder groups and the U.S. Fish and Wildlife Service. This research will advance our fundamental understanding of how input of materials from land and oceanographic conditions interact to influence coastal food webs. It will also allow us to track and understand: 1) how natural climate cycles influence coastal ecosystems in the Arctic, and 2) how climate change effects such as permafrost thaw, shifting precipitation regimes, and losses of sea ice alter coastal ecosystems. Near-shore food webs along the Alaskan Arctic coastline support large populations of migratory fish and waterfowl that are essential to the culture of Iñupiat communities of northern Alaska. The research at this LTER site will create a framework for anticipating the impacts of future changes on the coastal ecosystem that are of great concern to these communities. Results from this LTER program will also be of interest to a broader science community that is working to understand potential connections between Arctic change and global carbon cycling. Finally, this LTER project includes a strong commitment to education through graduate and undergraduate student involvement, post-doctoral mentoring, continuation of a very successful Summer Science K-12 Program in Kaktovik, and establishment of a parallel K-12 program in Utqiagvik. In addition, this project will employ native high school seniors or recently graduated students living in Utqiagvik and Kaktovik as field research assistants. 
+ 
+          Recent studies suggest that the ecological framework for understanding what controls food web structure needs to be expanded to include temporal forcing. More specifically, there is mounting evidence that differential availability of seasonally-distinct resources is critical for defining trophic linkages and maintaining stability and resilience of food webs. This new LTER program will use lagoons along the Alaskan Beaufort Sea coast as experimental units to test this concept, and broaden it to include temporal variations over longer timeframes. The Beaufort lagoons are ideal for testing this concept because they experience extreme variability in seasonal cycles, which are now subject to rapid directional shifts driven by climate change. Our overarching question is: How do variations in terrestrial inputs, local production, and exchange between lagoon and ocean waters over seasonal, inter-annual, inter-decadal, and longer timeframes interact to control food web structure through effects on carbon and nitrogen cycling, microbial and metazoan community composition, and trophic linkages? Arctic lagoons provide a unique opportunity to study these interactions in the absence of fringing wetlands that often modulate land-ocean interactions in other lagoon systems. In addition, barrier island geomorphology, which exerts a strong control on water exchange between lagoons and the open ocean, is highly dynamic in the Arctic because sea-ice effects on coastal geomorphology are superimposed on the effects of currents, sea level, and waves. Thus, connections between inputs from land and lagoon ecosystems are more direct, and water exchanges between lagoons and the open ocean are more variable than is typical of lower latitude systems. Specific study sites will be located in Elson Lagoon (western Beaufort), Simpson Lagoon and Stefansson Sound (central Beaufort), and Kaktovik and Jago lagoons (eastern Beaufort). The LTER will include seasonal field work during ice covered, ice break-up, and open water periods and also include sensor deployments for continuous measurements of key biogeochemical and hydrographic parameters.
+        
+      
+      
+        
+          BLE LTER is supported by the National Science Foundation under award #1656026 (2017-08-01 to 2022-07-31).
+        
+      
+      
+        National Science Foundation
+        http://dx.doi.org/10.13039/100000001
+        1656026
+        LTER: Beaufort Sea Lagoons: An Arctic Coastal Ecosystem in Transition
+        https://www.nsf.gov/awardsearch/showAward?AWD_ID=1656026
+      
+    
+    
+      Regional survey
+      Water chemistry from multiple aquatic ecosystems
+      
+        regional_survey.csv
+        31626
+        65c40c28f5373fd8ad5da428f4b2afeb
+        
+          
+            1
+            0
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-ble/1/7/a1723e0e5f3c4881f1a7ede1b036aba6
+          
+        
+      
+      
+        
+          Year
+          Year
+          Year data were collected
+          integer
+          
+            
+              YYYY
+              1
+              
+            
+          
+        
+        
+          Habitat
+          Habitat
+          Habitat type (pond, lake, river, lagoon, ocean)
+          string
+          
+            
+              
+                
+                  
+                    Lagoon
+                    Lagoon
+                  
+                  
+                    LAKE
+                    Lake
+                  
+                  
+                    POND
+                    Pond
+                  
+                  
+                    Salt-River
+                    River influenced by saltwater intrusion from lagoon
+                  
+                  
+                    TK-POND
+                    Thermokarst Pond
+                  
+                  
+                    Ocean
+                    Ocean
+                  
+                  
+                    RIVER
+                    Freshwater river
+                  
+                
+              
+            
+          
+        
+        
+          FwSal
+          Freshwater or Saline
+          Identifies freshwater or saline (incl. brackish) conditions
+          string
+          
+            
+              
+                
+                  
+                    Saline
+                    Saline or brackish water
+                  
+                  
+                    FW
+                    Freshwater
+                  
+                
+              
+            
+          
+        
+        
+          Site
+          Site
+          Site name. Not to be confused with a "site" defined in the EML element geographicCoverage
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+        
+        
+          Station
+          Station
+          When multiple sites within a single site were sampled, they were assigned a different subsite name.
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+        
+        
+          Latitude
+          Latitude
+          Latitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -90
+                  90
+                
+              
+            
+          
+          
+            -9999
+            Coordinates not collected for this location. See LocationNotes column in the same data table for  a description and bounding boxes.
+          
+        
+        
+          Longitude
+          Longitude
+          Longitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -180
+                  180
+                
+              
+            
+          
+          
+            -9999
+            Coordinates not collected for this location. See LocationNotes column in the same data table for  a description and bounding boxes.
+          
+        
+        
+          WaterColumnPosition
+          Water Column Position
+          Where sample was taken within a water column
+          string
+          
+            
+              
+                
+                  
+                    mid-column
+                    water collected from approximately middle of water column
+                  
+                  
+                    surface
+                    water collected from approximately 0-30 cm below the surface
+                  
+                  
+                    bottom
+                    water collected from approximately 30 cm above the bottom
+                  
+                
+              
+            
+          
+        
+        
+          JulianDay
+          Julian Day
+          Day of year starting from Jan 1st. AKDT time.
+          integer
+          
+            
+              DDD
+              1
+              
+            
+          
+        
+        
+          WOY
+          Week of the Year
+          Week of the year
+          integer
+          
+            
+              ww
+              1
+              
+            
+          
+        
+        
+          DOC_ppm
+          Dissolved Organic Carbon
+          Dissolved organic carbon determined by non-purgeable organic carbon method (ppm). Precision for Elson and Chukchi sites is 0.1, for all other sites 0.01.
+          decimal
+          
+            
+              
+                partsPerMillion
+              
+              0.01
+              
+                real
+                
+                  0
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+        
+        
+          WaterTemp_C
+          Water Temperature
+          Water temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001227
+          
+        
+        
+          pCO2_uatm
+          pCO2
+          Partial pressure of CO2 (uatm)
+          decimal
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000636
+          
+        
+        
+          Wind_m_s
+          Wind Speed
+          Wind speed in m/s
+          decimal
+          
+            
+              
+                meterPerSecond
+              
+              0.01
+              
+                real
+                
+                  0
+                
+              
+            
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001233
+          
+        
+        
+          AirTemp_C
+          Air Temperature
+          Air temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001225
+          
+        
+        
+          k_cm_h
+          Gas transfer co-efficient
+          Gas transfer co-efficient, calculated based on Wanninkhof 2014 (see methods document for full reference)
+          decimal
+          
+            
+              
+                centimeterPerHour
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+        
+        
+          Fmmol_mmol_m2_day
+          CO2 flux in mmol
+          CO2 flux in mmol/m2/day
+          decimal
+          
+            
+              
+                millimolePerMeterSquaredPerDay
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000536
+          
+        
+        
+          Fgrams_g_m2_day
+          CO2 flux in grams
+          CO2 flux in g/m2/day
+          decimal
+          
+            
+              
+                gramPerMeterSquaredPerDay
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000536
+          
+        
+        
+          LocationNotes
+          Site description and bounding boxes
+          Site description and bounding boxes, only for locations without exact coordinates
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+          
+            -9999
+            Not applicable, exact coordinates already supplied
+          
+        
+      
+      231
+    
+    
+      Elson 2015 spatial survey
+      pCO2 survey of Elson Lagoon from 2015
+      
+        Elson_2015_spatial_survey.csv
+        224030
+        5d7d2753c65ee3eb921742d7d1e580b8
+        
+          
+            1
+            0
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-ble/1/7/b698644419ea88ab1072f4fcbef9083c
+          
+        
+      
+      
+        
+          Site
+          Site
+          Site name
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+        
+        
+          Station
+          Station
+          When multiple sites within a single site were sampled, they were assigned a different subsite name
+          string
+          
+            
+              
+                
+                  any text
+                
+              
+            
+          
+          
+            -9999
+            Station is not part of regional survey and so does not get a station identifier
+          
+        
+        
+          Latitude
+          Latitude
+          Latitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -90
+                  90
+                
+              
+            
+          
+        
+        
+          Longitude
+          Longitude
+          Longitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -180
+                  180
+                
+              
+            
+          
+        
+        
+          DateTime
+          Date and time
+          Time of sampling. AKDT time.
+          dateTime
+          
+            
+              YYYY-MM-DDThh:mm
+              1
+              
+            
+          
+        
+        
+          pCO2_uatm
+          pCO2
+          Partial pressure of CO2 (uatm)
+          decimal
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000636
+          
+        
+        
+          WaterTemp_C
+          Water Temperature
+          Water temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001227
+          
+        
+        
+          DOC_ppm
+          Dissolved Organic Carbon
+          Dissolved organic carbon determined by non-purgeable organic carbon method (ppm)
+          decimal
+          
+            
+              
+                partsPerMillion
+              
+              0.1
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000571
+          
+        
+      
+      2963
+    
+    
+      IBP C diel pCO2 data
+      Diel pCO2 in tundra pond over 4 summers
+      
+        IBP_C_diel_pCO2.csv
+        71190
+        d3a158536bc6bcc4b354e8c3220b8801
+        
+          
+            1
+            0
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-ble/1/7/617415426847fd900b644283d86c1c66
+          
+        
+      
+      
+        
+          Latitude
+          Latitude
+          Latitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -90
+                  90
+                
+              
+            
+          
+        
+        
+          Longitude
+          Longitude
+          Longitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -180
+                  180
+                
+              
+            
+          
+        
+        
+          Year
+          Year
+          Year data were collected
+          integer
+          
+            
+              YYYY
+              1
+              
+            
+          
+        
+        
+          Hour
+          Hour
+          Hour data were collected. AKDT time.
+          integer
+          
+            
+              hh
+              1
+              
+            
+          
+        
+        
+          JulianDay
+          Julian Day
+          Day of year starting from Jan 1st. AKDT time.
+          integer
+          
+            
+              DDD
+              1
+              
+            
+          
+        
+        
+          Radiation_W_m2
+          Radiation
+          Downward total solar radiation. Post 2017, these data were acquired from NEON's Barrow Environmental Observatory and are subject to NEON's data policy (see intellectuallRights for a copy).
+          decimal
+          
+            
+              
+                wattPerMeterSquared
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001103
+          
+        
+        
+          AirTemp_C
+          Air Temperature
+          Air temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001225
+          
+        
+        
+          pCO2_uatm
+          pCO2
+          Partial pressure of CO2 (uatm)
+          decimal
+          
+            
+              
+                microatmosphere
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00000636
+          
+        
+        
+          DailyRain_mm
+          Total Daily Rainfall
+          24-hour sum of rainfall
+          decimal
+          
+            
+              
+                millimeter
+              
+              0.01
+              
+                real
+                
+                  0
+                
+              
+            
+          
+        
+        
+          WaterTemp_C
+          Water Temperature
+          Water temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001227
+          
+        
+      
+      1168
+    
+    
+      IBP C Daily NEP
+      Summer Net Ecosystem Production (NEP) in tundra pond over 4 summers
+      
+        IBP_C_Daily_NEP.csv
+        14092
+        3e953a033cc23f2c35f58a0cd14c73a1
+        
+          
+            1
+            0
+            \r\n
+            column
+            
+              ,
+              "
+            
+          
+        
+        
+          
+            https://pasta.lternet.edu/package/data/eml/knb-lter-ble/1/7/9942544de7e794ce84a62151bd41e6b3
+          
+        
+      
+      
+        
+          Latitude
+          Latitude
+          Latitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -90
+                  90
+                
+              
+            
+          
+        
+        
+          Longitude
+          Longitude
+          Longitude in decimal degrees
+          decimal
+          
+            
+              
+                degree
+              
+              
+                real
+                
+                  -180
+                  180
+                
+              
+            
+          
+        
+        
+          Year
+          Year
+          Year data were collected
+          integer
+          
+            
+              YYYY
+              1
+              
+            
+          
+        
+        
+          JulianDay
+          Julian Day
+          Day of year starting from Jan 1st. AKDT time.
+          integer
+          
+            
+              DDD
+              1
+              
+            
+          
+        
+        
+          WaterTemp_C
+          Water Temperature
+          Water temperature in degrees Celsius
+          decimal
+          
+            
+              
+                celsius
+              
+              0.01
+              
+                real
+                
+                  -273.15
+                
+              
+            
+          
+        
+        
+          PAR_umol_m2_day
+          Photosynthetically Active Radiation
+          Photosynthetically active solar radiation
+          decimal
+          
+            
+              
+                micromolePerMeterSquaredPerDay
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+          
+            http://ecoinformatics.org/oboe/oboe.1.2/oboe-core.owl#containsMeasurementsOfType
+            http://purl.dataone.org/odo/ECSO_00001573
+          
+        
+        
+          NEP_g_m3_day
+          Net Ecosystem Production
+          Net ecosystem production estimated by free water metabolism, in grams O2 per meter cubed per day
+          decimal
+          
+            
+              
+                gramPerMeterCubedPerDay
+              
+              0.01
+              
+                real
+              
+            
+          
+          
+            -9999
+            Data not collected
+          
+        
+      
+      286
+    
+  
+  
+    
+      
+        
+          areal uptake rate
+        
+        
+          ratio of two quantities as parts per million (1:1000000)
+        
+        
+        
+          .001 meters
+        
+        
+        
+          360 degrees comprise a unit circle.
+        
+        
+          1 microAtmosphere = 0.000001 atmospheres = 1013.25 millibars = 0.101325 Pascals = 0.0000147 lb/sq.in
+        
+        
+        
+          millimole per square meter per day
+        
+        
+          SI-derived unit of temperature
+        
+        
+          concentration unit; sometimes used for pigments in natural waters.same magnitude as microgramPerLiter
+        
+        
+          irradiance unit
+        
+      
+    
+  
