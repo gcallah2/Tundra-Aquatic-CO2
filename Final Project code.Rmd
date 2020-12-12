@@ -9,7 +9,96 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r include = FALSE}
+```{r}
+# Load Libraries required for data analysis
 library(tidyverse)
+library(here)
 ```
 
+# Load and Tidy Data
+
+```{r message=FALSE}
+# Load region CO2 flux dataframe
+data <- read_csv(here("data/regional_survey.csv"))
+
+# The columns of interest are AirTemp_C, and Fmmol_mmol_m2_day
+# Carbon flux units are CO2 flux in mmol per m2 per day
+
+# Tidy region CO2 flux dataframe
+data_tidy <- data %>% mutate(Habitat = tolower(Habitat)) %>% # Change all Habitat names to lowercase
+  rename(c_flux = Fmmol_mmol_m2_day, # Rename key variables 
+         air_temp = AirTemp_C) %>%
+  filter(air_temp >-100) %>% filter(c_flux >-100) %>% # filter out -9999 missing values for air temp and C flux
+  filter(Habitat != "tk-pond") %>% # remove tk-pond observations due to few (7) observations 
+  filter(Habitat != "ocean") #remove ocean due to all equivalent air temperature values and time
+```
+
+## Diagnostic Plots
+```{r}
+# Histogram of C Flux
+ggplot(data = data_tidy, aes(x=c_flux))+
+  geom_freqpoly() + theme_bw()+
+  labs(x = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
+```
+
+# All-Habitat Correlation
+
+```{r}
+# Plot overall C Flux ~ Air Temperature
+ggplot(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux))) +
+  geom_point() + geom_smooth(method = lm) + theme_bw()+
+  labs(x="Air Temperature (°C)", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
+
+# Pearson's Correlation Test
+cor.test(data_tidy$c_flux, data_tidy$air_temp)
+
+# Linear model (y~x) 
+lm_overall <- lm(c_flux ~ air_temp, data = data_tidy)
+summary(lm_overall)
+``` 
+
+## Individual Habitat Correlations
+
+```{r}
+# C flux Boxplot by Habitat
+ggplot()+
+  geom_boxplot(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat)) +
+  theme_bw() +
+  labs(x="Habitat", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day))) 
+
+# C Flux ~ Air temp by Habitat
+ggplot() +
+    geom_point(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat)) + 
+    geom_smooth(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat), 
+    method = lm, se =F) + theme_bw() +
+  labs(x="Air Temperature (°C)", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
+
+```
+
+```{r}
+unique(data_tidy$Habitat) # list all unique habitat types
+ 
+## Create discrete data frames for each habitat type
+pond <- data_tidy %>% filter(Habitat == "pond")
+lake <- data_tidy %>% filter(Habitat == "lake")
+lagoon <- data_tidy %>% filter(Habitat == "lagoon")
+river <- data_tidy %>% filter(Habitat == "river")
+salt_river <- data_tidy %>% filter(Habitat == "salt-river")
+
+# Correlation test for each habitat type (* denotes significant p value)
+cor.test(pond$c_flux, pond$air_temp) #p-value = 0.01328 *
+cor.test(lake$c_flux, lake$air_temp) #p-value = 0.5811
+cor.test(lagoon$c_flux, lagoon$air_temp) #p-value = 1.613e-13 *
+cor.test(river$c_flux, river$air_temp) #p-value = 0.8745
+cor.test(salt_river$c_flux, salt_river$air_temp) #p-value = 0.05199 *?
+
+# Linear Regression for significantly correlated habitat data (pond, lagoon and salt river)
+pond_lm <- lm(c_flux ~ air_temp, data = pond)
+lagoon_lm <- lm(c_flux ~ air_temp, data = lagoon)
+saltriver_lm <- lm(c_flux ~ air_temp, data = salt_river)
+
+## Look at summary data from lm
+summary(pond_lm)
+summary(lagoon_lm)
+summary(saltriver_lm)
+```
