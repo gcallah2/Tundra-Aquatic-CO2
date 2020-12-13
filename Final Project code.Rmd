@@ -47,6 +47,10 @@ ggplot(data = data_tidy, aes(x=c_flux))+
 This plot, correlation test and linear model is in order to determine the relationship between air temperature and carbon flux across all aquatic habitat types observed within the dataset. 
 
 ```{r}
+# Quantify the overall Carbon flux average (across all habitat types)
+mean(data_tidy$c_flux)
+sd(data_tidy$c_flux)
+
 # Plot overall C Flux ~ Air Temperature
 ggplot(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux))) +
   geom_point() + geom_smooth(method = lm) + theme_bw()+
