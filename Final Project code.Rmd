@@ -34,14 +34,17 @@ data_tidy <- data %>% mutate(Habitat = tolower(Habitat)) %>% # Change all Habita
 ```
 
 ## Diagnostic Plots
+
 ```{r}
-# Histogram of C Flux
+# Frequency plot of C Flux
 ggplot(data = data_tidy, aes(x=c_flux))+
   geom_freqpoly() + theme_bw()+
   labs(x = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
 ```
 
 # All-Habitat Correlation
+
+This plot, correlation test and linear model is in order to determine the relationship between air temperature and carbon flux across all aquatic habitat types observed within the dataset. 
 
 ```{r}
 # Plot overall C Flux ~ Air Temperature
@@ -57,7 +60,10 @@ lm_overall <- lm(c_flux ~ air_temp, data = data_tidy)
 summary(lm_overall)
 ``` 
 
-## Individual Habitat Correlations
+## Individual Habitat Carbon flux
+
+This first boxplot shows the average and spread of carbon flux data separated by habitat. I then run an ANOVA to test for significant differences between carbon flux at different habitat types.
+I then run a Tukey HSD test test on the estimated ANOVA model to identify groups of habitats that are significantly different from each other with regard to carbon flux. 
 
 ```{r}
 # C flux Boxplot by Habitat
@@ -66,6 +72,23 @@ ggplot()+
   theme_bw() +
   labs(x="Habitat", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day))) 
 
+# ANOVA, test for statistically significant difference between carbon flux by habitat
+aov_cflux_hab <- aov(c_flux ~ Habitat, data = data_tidy)
+summary(aov_cflux_hab) 
+
+# Run Tukey HSD test on estimated ANOVA model
+TukeyHSD(aov_cflux_hab)
+
+# Show Tukey HSD test output
+library(agricolae) # load package that helps to view output
+aov_cflux_hab <- HSD.test(aov_cflux_hab, trt = "Habitat", alpha = 0.05) # set treatment variable to Habitat and p-value cutoff to 0.05
+aov_cflux_hab # view output
+
+```
+
+## Analyze the relationship between air temperature and carbon flux by habitat
+
+```{r}
 # C Flux ~ Air temp by Habitat
 ggplot() +
     geom_point(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat)) + 
@@ -85,7 +108,7 @@ lagoon <- data_tidy %>% filter(Habitat == "lagoon")
 river <- data_tidy %>% filter(Habitat == "river")
 salt_river <- data_tidy %>% filter(Habitat == "salt-river")
 
-# Correlation test for each habitat type (* denotes significant p value)
+# Correlation test for each habitat type (* denotes significant p value for correlation)
 cor.test(pond$c_flux, pond$air_temp) #p-value = 0.01328 *
 cor.test(lake$c_flux, lake$air_temp) #p-value = 0.5811
 cor.test(lagoon$c_flux, lagoon$air_temp) #p-value = 1.613e-13 *
@@ -97,8 +120,9 @@ pond_lm <- lm(c_flux ~ air_temp, data = pond)
 lagoon_lm <- lm(c_flux ~ air_temp, data = lagoon)
 saltriver_lm <- lm(c_flux ~ air_temp, data = salt_river)
 
-## Look at summary data from lm
+## View summary data from linear models
 summary(pond_lm)
 summary(lagoon_lm)
 summary(saltriver_lm)
 ```
+
