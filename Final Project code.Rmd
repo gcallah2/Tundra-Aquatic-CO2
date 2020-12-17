@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r message=FALSE}
 # Load Libraries required for data analysis
 library(tidyverse)
 library(here)
@@ -22,33 +22,28 @@ library(here)
 data <- read_csv(here("data/regional_survey.csv"))
 
 # The columns of interest are AirTemp_C, and Fmmol_mmol_m2_day
-# Carbon flux units are CO2 flux in mmol per m2 per day
+## Carbon flux units are `mmol/m2/day`
 
 # Tidy region CO2 flux dataframe
-data_tidy <- data %>% mutate(Habitat = tolower(Habitat)) %>% # Change all Habitat names to lowercase
+data_tidy <- data %>% mutate(Habitat = tolower(Habitat)) %>% # Change all habitat names to lowercase
   rename(c_flux = Fmmol_mmol_m2_day, # Simplify key variable names
          air_temp = AirTemp_C) %>%
   filter(air_temp >-100) %>% filter(c_flux >-100) %>% # filter out missing (-9999) values for air temp and C flux
   filter(Habitat != "tk-pond") %>% # remove tk-pond observations due to few (7) observations 
-  filter(Habitat != "ocean") #remove ocean due to all equivalent air temperature values and time
+  filter(Habitat != "ocean") #remove ocean due to all equivalent air temperature values
 
-# OUtlier removed
-data_tidy2 <- data %>% mutate(Habitat = tolower(Habitat)) %>% # Change all Habitat names to lowercase
-  rename(c_flux = Fmmol_mmol_m2_day, # Simplify key variable names
-         air_temp = AirTemp_C) %>%
-  filter(air_temp >-100) %>% filter(c_flux >-100) %>% # filter out missing (-9999) values for air temp and C flux
-  filter(Habitat != "tk-pond") %>% # remove tk-pond observations due to few (7) observations 
-  filter(Habitat != "ocean") %>% #remove ocean due to all equivalent air temperature values and time
-   filter(c_flux<900) 
 ```
 
-## Individual Habitat Carbon flux
-
-This first boxplot shows the average and spread of carbon flux data separated by habitat. I then run an ANOVA to test for significant differences between carbon flux at different habitat types.
-I then run a Tukey HSD test test on the estimated ANOVA model to identify groups of habitats that are significantly different from each other with regard to carbon flux. 
+## Net CO2 flux by region and by individual habitat types
 
 ```{r}
-# C flux Boxplot by Habitat
+# Quantify the overall Carbon flux average (across all habitat types)
+mean(data_tidy$c_flux) # Average (mmol/m2/day)
+sd(data_tidy$c_flux) # Standard deviation
+```
+
+```{r}
+# CO2 flux boxplot (by habitat)
 ggplot()+
   geom_boxplot(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat)) +
   theme_bw() +
@@ -68,44 +63,37 @@ aov_cflux_hab # view output
 
 ```
 
-# Effect of air temperature on CO2 flux
-
-This plot, correlation test and linear model is in order to determine the relationship between air temperature and carbon flux across all aquatic habitat types observed within the dataset. 
+## Analyze the effect of air temperature on CO2 flux (whole region)
 
 ```{r}
-# Quantify the overall Carbon flux average (across all habitat types)
-mean(data_tidy$c_flux) # Average (mmol/m2/day)
-sd(data_tidy$c_flux) # Standard deviation
-
 # Plot overall C Flux ~ Air Temperature
 ggplot(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux))) +
   geom_point() + geom_smooth(method = lm) + theme_bw()+
   labs(x="Air Temperature (°C)", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
 
-# Pearson's Correlation Test
+# Pearson's Correlation Test for CO2 flux and Air temperature 
 cor.test(data_tidy$c_flux, data_tidy$air_temp)
 
-# Linear model (y~x) 
-lm_overall <- lm(c_flux ~ air_temp, data = data_tidy2)
+# Linear model (Effect of Air Temperature on CO2 Flux) 
+lm_overall <- lm(c_flux ~ air_temp, data = data_tidy)
 summary(lm_overall)
 ``` 
 
-## Analyze the relationship between air temperature and carbon flux by habitat
+## Analyze the effect of air temperature on CO2 flux (by habitat)
 
 ```{r}
-# C Flux ~ Air temp by Habitat
+# C Flux ~ Air temp (by Habitat)
+# Scatterplot with estimated linear regression lines
 ggplot() +
     geom_point(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat)) + 
     geom_smooth(data = data_tidy, mapping = aes(x= air_temp, y=(c_flux), color = Habitat), 
     method = lm, se =F) + theme_bw() +
   labs(x="Air Temperature (°C)", y = expression(Carbon ~ Flux ~ (mmol ~ '/' ~ m^{2} ~ '/' ~ day)))
 
-```
-
-```{r}
-unique(data_tidy$Habitat) # list all unique habitat types
+# List all unique habitat types
+unique(data_tidy$Habitat) 
  
-## Create discrete data frames for each habitat type
+## Create discrete data frames containing observations of each habitat type
 pond <- data_tidy %>% filter(Habitat == "pond")
 lake <- data_tidy %>% filter(Habitat == "lake")
 lagoon <- data_tidy %>% filter(Habitat == "lagoon")
@@ -119,7 +107,7 @@ cor.test(lagoon$c_flux, lagoon$air_temp) #p-value = 1.613e-13 *
 cor.test(river$c_flux, river$air_temp) #p-value = 0.8745
 cor.test(salt_river$c_flux, salt_river$air_temp) #p-value = 0.05199
 
-# Linear Regression for significantly correlated habitat data (pond, lagoon and salt river)
+# Linear Regression for significantly correlated habitat data (pond and lagoon)
 pond_lm <- lm(c_flux ~ air_temp, data = pond)
 lagoon_lm <- lm(c_flux ~ air_temp, data = lagoon)
 
